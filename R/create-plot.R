@@ -22,3 +22,4 @@ scatter_plot =
 ggsave(filename = "graphics/scatter-temp-humidity.png", plot = scatter_plot)
 
 #finish
+# fix imaginary bug
