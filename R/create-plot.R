@@ -13,9 +13,10 @@ city = "Sydney"
 
 scatter_plot =
   df %>%
-  filter(Location == "Brisbane") %>%
+  filter(Location == city) %>%
   ggplot(aes(x = Temp9am, y = Humidity9am)) +
-  geom_point(colour = "blue")
+  geom_point(colour = "blue") +
+  ggtitle("Plot of Sydney")
 
 # Save the plot in graphics/
 ggsave(filename = "graphics/scatter-temp-humidity.png", plot = scatter_plot)
